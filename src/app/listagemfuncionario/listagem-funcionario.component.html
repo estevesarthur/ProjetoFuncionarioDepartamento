@@ -1,0 +1,17 @@
+<section class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">nome</th>
+                <th scope="col">salário</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr scope="row" *ngFor="let funcionario of funcionarios">
+                <td>{{ funcionario.nome }}</td>
+                <td>{{ funcionario.salario | currency }}</td>
+            </tr>
+        </tbody>
+    </table>
+</section>

@@ -1,0 +1,17 @@
+<div class="row mt-5">
+    <div class="col">
+        <div id="titulo">
+            <h2>{{titulo}}</h2>
+            <form id="formFuncionario" (ngSubmit)="salvar()">
+                <div class="form-group">
+                    <label>Nome</label>
+                    <input type="text" name="nome" class="form-control" placeholder="Digite o nome do funcionário"
+                        [(ngModel)]="nome">
+                </div>
+                <div class="form-group">
+                    <label>Salário</label>
+                    <input type="text" name="salario" class="form-control" [(ngModel)]="salario">
+                </div>
+                <button type="submit">Salvar</button>
+            </form>
+        </div>
